@@ -15,4 +15,6 @@ install:
   - cd tests && npm install
 
 script:
-  - npm test
+  - cd ../package/collection2 #goto package dir
+  - ln -s ../../tests tests #create softlink to tests
+  - npm test #and run in this folder
