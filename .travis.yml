@@ -15,5 +15,4 @@ install:
   - cd tests && npm install
 
 script:
-  - cd ../package
-  - npm --prefix ../tests run test
+  - npm test
