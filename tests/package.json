@@ -2,7 +2,7 @@
   "name": "tests",
   "private": true,
   "scripts": {
-    "test": "METEOR_PACKAGE_DIRS=../package meteor test ../package --once --driver-package dispatch:mocha-phantomjs",
+    "test": "cd .. && METEOR_PACKAGE_DIRS=../package meteor test --once --driver-package dispatch:mocha-phantomjs",
     "test:watch": "METEOR_PACKAGE_DIRS=../package TEST_WATCH=1 meteor test --driver-package dispatch:mocha-phantomjs"
   },
   "dependencies": {
