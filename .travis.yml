@@ -15,4 +15,4 @@ install:
   - cd tests && npm install
 
 script:
-  - cd tests && npm test #also cd into test on script
+  - cd $PATH && npm test #also cd into test on script
