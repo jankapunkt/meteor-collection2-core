@@ -15,4 +15,6 @@ install:
   - cd tests && npm install
 
 script:
-  - cd $PATH && npm test #also cd into test on script
+  - cwp
+  - ls -la
+  - npm test #also cd into test on script
